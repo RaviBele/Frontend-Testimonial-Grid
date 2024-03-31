@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/RaviBele/Frontend-Testimonial-Grid)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://unique-truffle-f7343b.netlify.app/)
 
 ## My process
 
