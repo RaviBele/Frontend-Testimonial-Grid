@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ECF2F8;
+}
+
+article {
+    margin-inline: 1rem;
+    margin-block: 1rem;
+    max-width: 1110px;
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "Purple Purple Grey Offwhite"
+        "White Black Black Offwhite"
+    ;
+}
+
+section {
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+}
+
+.heading {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.profile-img {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #A775F1;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.profile-img img {
+    width: 100%;
+}
+
+.profile-name h2 {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.profile-name p {
+    font-size: 11px;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 13px;
+    color: #CFCFCF;
+}
+
+.daniel {
+    background-color: #733FC8;
+    grid-area: Purple;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 81% 0%;
+}
+
+.jonathan {
+    background-color: #48556A;
+    grid-area: Grey;
+}
+
+.jeanette {
+    background-color: white;
+    grid-area: White;
+}
+
+.jeanette .profile-name h2,
+.jeanette .profile-name p,
+.jeanette .description,
+.jeanette .title {
+    color: #48556A;
+}
+
+.patrick {
+    color: white;
+    background-color: black;
+    grid-area: Black;
+}
+
+.patrick .title {
+    color: #ECF2F8;
+}
+
+.kira {
+    background-color: white;
+    grid-area: Offwhite;
+}
+
+.kira .profile-name h2,
+.kira .profile-name p,
+.kira .description,
+.kira .title {
+    color: #48556A;
+}
+
+@media (max-width: 768px) {
+    article {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "Grey Purple Purple"
+        "White Black Black"
+        "Offwhite Offwhite Offwhite"
+        ;
+    }
+}
+
+@media (max-width: 600px) {
+    article {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "Purple Purple"
+        "Black Black"
+        "Grey White"
+        "Offwhite Offwhite"
+        ;
+    }
+}
+
+@media (max-width: 400px) {
+    article {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "Purple"
+        "Grey"
+        "White"
+        "Black"
+        "Offwhite"
+        ;
+    }
+
+    .daniel {
+        background-position: 91% 0%;
+    }
+}
