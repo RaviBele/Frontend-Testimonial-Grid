@@ -121,7 +121,7 @@ section {
     color: #48556A;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 810px) {
     article {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
@@ -132,7 +132,7 @@ section {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 664px) {
     article {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
